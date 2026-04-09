@@ -4,11 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .header-table {
+            border-spacing: 10px;
+        }
+        .cart-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .cart-empty {
+            text-align: center;
+            padding: 40px;
+            font-size: 18px;
+        }
+        .cart-items {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .cart-items thead {
+            background-color: #333;
+        }
+        .cart-items th {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid #555;
+        }
+        .cart-items td {
+            padding: 15px;
+            border-bottom: 1px solid #555;
+        }
+        .cart-items tr:hover {
+            background-color: #222;
+        }
+        .product-name {
+            font-weight: bold;
+        }
+        .buttons {
+            margin-top: 30px;
+            text-align: center;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .total {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #555;
+        }
+    </style>
 </head>
-<body style="background-color: black; color: white;">
-    <h1>Carrinho de Compras</h1>
-    <p>Seu carrinho está vazio.</p>
-    <button onclick="window.location.href='checkout.html'">Ir para Checkout</button>
-    
+<body>
+    <header>
+        <table class="header-table" border="0">
+            <tr>
+                <td align="left">
+                    <h1>Klyne</h1>
+                </td>
+                <td align="center">
+                    <form>
+                        <input type="text" placeholder="Pesquisar...">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </td>
+                <td align="right">
+                    <a href="./admin.html">Admin</a> | 
+                    <a href="./cart.html">Carrinho</a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </header>
+
+    <div class="cart-container">
+        <h2>Carrinho de Compras</h2>
+
+        <!-- Mensagem de Carrinho Vazio -->
+        <div class="cart-empty" id="empty-message">
+            <p>Seu carrinho está vazio.</p>
+            <p>Adicione produtos para começar!</p>
+        </div>
+
+        <!-- Tabela de Produtos -->
+        <table class="cart-items" id="cart-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Os itens do carrinho aparecerão aqui -->
+            </tbody>
+        </table>
+
+        <!-- Total -->
+        <div class="total" id="total-section" style="display: none;">
+            Total: R$ <span id="total-value">0.00</span>
+        </div>
+
+        <!-- Botões -->
+        <div class="buttons">
+            <button onclick="window.location.href='index.html'">Continue comprando</button>
+            <button onclick="window.location.href='checkout.html'">Ir para Checkout</button>
+        </div>
+    </div>
 </body>
 </html>

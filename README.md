@@ -1,41 +1,77 @@
-# site-html
-Loja de Tênis
+#  Klyne - Loja de Tênis
 
-Este é um projeto de site de vendas de tênis desenvolvido com HTML puro, com o objetivo de praticar estruturação de páginas web e trabalho em equipe utilizando Git e GitHub.
+Projeto de um site de e-commerce de tênis desenvolvido utilizando **HTML puro**, com foco em aprendizado de estruturação de páginas web e trabalho em equipe com Git e GitHub.
 
-Sobre o projeto
+---
 
-O site simula uma loja online de tênis, contendo páginas como:
+##  Sobre o projeto
 
-Home
-Admin
-Historico
-Carrinho
-Checkout
+O site simula uma **loja online de tênis**, com funcionalidades básicas de navegação e administração.
 
-Cada página foi desenvolvida separadamente pelos integrantes da equipe.
+Inclui páginas como:
 
-Tecnologias utilizadas
-HTML5
+*  Home (catálogo de produtos)
+*  Admin (painel administrativo)
+*  Histórico de Compras
+*  Carrinho
+*  Checkout
 
-Estrutura do projeto
+Cada página foi desenvolvida separadamente pelos integrantes da equipe, promovendo organização e colaboração.
 
-admin.html
-cart.html
-checkout.html
-index.html
+---
 
- Colaboração
+##  Tecnologias utilizadas
 
-Este projeto foi desenvolvido em equipe utilizando o GitHub.
+* HTML5
 
-Praticar:
+---
 
-Estrutura HTML
-Trabalho em equipe
-Uso de Git e GitHub
- Preview
+##  Estrutura do projeto
 
- Licença
+```
+/site-html
+│
+├── index.html
+├── admin.html
+├── gerenciar_produtos.html
+├── historico.html
+├── cart.html
+├── checkout.html
+└── imagens/
+```
 
-Este projeto é apenas para fins educacionais.
+---
+
+##  Colaboração
+
+Este projeto foi desenvolvido em equipe utilizando **GitHub**, com divisão de tarefas entre os membros.
+
+###  Objetivos do projeto:
+
+* Praticar estruturação com HTML
+* Aprender versionamento com Git
+* Trabalhar em equipe
+* Simular um sistema real de e-commerce
+
+---
+
+##  Funcionalidades
+
+* Visualização de produtos
+* Painel administrativo
+* Adição e edição de produtos
+* Histórico de compras
+* Navegação entre páginas
+* Simulação de carrinho e checkout
+
+---
+
+##  Preview
+
+*(Adicione aqui prints do seu projeto depois )*
+
+---
+
+##  Licença
+
+Este projeto foi desenvolvido apenas para fins educacionais.

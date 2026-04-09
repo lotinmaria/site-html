@@ -1,10 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Meu Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoesStore | Loja de Sapatos</title>
 </head>
 <body>
-  <h1>Olá, mundo!</h1>
-  <p>Meu site simples</p>
+  <header>
+    <div>
+      <a href="index.html">ShoesStore</a>
+      <form action="#" method="get">
+        <label for="search">Buscar sapatos</label>
+        <input type="search" id="search" name="search" placeholder="Buscar sapatos...">
+      </form>
+      <nav>
+        <a href="admin.html">Admin</a>
+        <a href="cart.html">Carrinho</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="produtos-titulo">
+      <h1 id="produtos-titulo">Nossos Produtos</h1>
+      <p>Encontre o sapato perfeito para você</p>
+    </section>
+
+    <section aria-label="Produtos disponíveis">
+      <article>
+        <span>Casual</span>
+        <h2>Tênis Casual Premium</h2>
+        <p>Tênis casual de couro sintético com design moderno e confortável</p>
+        <p>R$ 299,90</p>
+        <label for="tamanho-casual">Selecione o tamanho</label>
+        <select id="tamanho-casual" name="tamanho-casual">
+          <option value="">Selecione o tamanho</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+        </select>
+        <button type="button">Adicionar ao Carrinho</button>
+      </article>
+
+      <article>
+        <span>Esporte</span>
+        <h2>Tênis Esportivo Pro</h2>
+        <p>Tênis esportivo com tecnologia de amortecimento avançado</p>
+        <p>R$ 399,90</p>
+        <label for="tamanho-esporte">Selecione o tamanho</label>
+        <select id="tamanho-esporte" name="tamanho-esporte">
+          <option value="">Selecione o tamanho</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+        </select>
+        <button type="button">Adicionar ao Carrinho</button>
+      </article>
+
+      <article>
+        <span>Social</span>
+        <h2>Sapato Social Elegante</h2>
+        <p>Sapato social em couro legítimo, perfeito para ocasiões formais</p>
+        <p>R$ 449,90</p>
+        <label for="tamanho-social">Selecione o tamanho</label>
+        <select id="tamanho-social" name="tamanho-social">
+          <option value="">Selecione o tamanho</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+        </select>
+        <button type="button">Adicionar ao Carrinho</button>
+      </article>
+
+      <article>
+        <span>Aventura</span>
+        <h2>Bota Adventure</h2>
+        <p>Bota resistente para aventuras ao ar livre</p>
+        <p>R$ 379,90</p>
+        <label for="tamanho-aventura">Selecione o tamanho</label>
+        <select id="tamanho-aventura" name="tamanho-aventura">
+          <option value="">Selecione o tamanho</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+        </select>
+        <button type="button">Adicionar ao Carrinho</button>
+      </article>
+
+      <article>
+        <span>Casual</span>
+        <h2>Sandália Confort</h2>
+        <p>Sandália confortável para o dia a dia</p>
+        <p>R$ 149,90</p>
+        <label for="tamanho-sandalia">Selecione o tamanho</label>
+        <select id="tamanho-sandalia" name="tamanho-sandalia">
+          <option value="">Selecione o tamanho</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+        </select>
+        <button type="button">Adicionar ao Carrinho</button>
+      </article>
+
+      <article>
+        <span>Esporte</span>
+        <h2>Tênis Running Ultra</h2>
+        <p>Tênis para corrida com máximo conforto e performance</p>
+        <p>R$ 499,90</p>
+        <label for="tamanho-running">Selecione o tamanho</label>
+        <select id="tamanho-running" name="tamanho-running">
+          <option value="">Selecione o tamanho</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+        </select>
+        <button type="button">Adicionar ao Carrinho</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <div>
+        <h2>ShoesStore</h2>
+        <p>A melhor loja de sapatos com estilo e qualidade.</p>
+      </div>
+      <div>
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Produtos</a></li>
+          <li><button onclick="window.location.href='cart.html'">Carrinho</button></li>
+          <li><a href="admin.html">Área Admin</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Categorias</h3>
+        <ul>
+          <li>Casual</li>
+          <li>Esporte</li>
+          <li>Social</li>
+          <li>Aventura</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Redes Sociais</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">E-mail</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2026 ShoesStore. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

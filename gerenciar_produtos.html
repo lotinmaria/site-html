@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gerenciar Produtos - Klyne</title>
+  </head>
+  <body>
+    <header>
+      <table width="100%">
+        <tr>
+          <td><h1>Klyne</h1></td>
+
+          <td align="center">
+            <input type="text" placeholder="Pesquisar..." />
+            <input type="submit" value="Buscar" />
+          </td>
+
+          <td align="right">
+            <a href="index.html">Home</a> |
+            <a href="admin.html">Admin</a>
+          </td>
+        </tr>
+      </table>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Gerenciar Produtos</h2>
+
+      <button onclick="abrirAdicionar()">Adicionar Produto</button>
+
+      <br /><br />
+
+      <table border="1" cellspacing="10" cellpadding="10">
+        <tr>
+          <td align="center">
+            <img src="tenis.webp" width="120" /><br /><br />
+            <button onclick="confirmarDelete()">Deletar</button><br /><br />
+            <button onclick="abrirEditar()">Editar</button>
+          </td>
+
+          <td align="center">
+            <img src="./tenis.webp" width="120" /><br /><br />
+            <button onclick="confirmarDelete()">Deletar</button><br /><br />
+            <button onclick="abrirEditar()">Editar</button>
+          </td>
+
+          <td align="center">
+            <img src="./tenis.webp" width="120" /><br /><br />
+            <button onclick="confirmarDelete()">Deletar</button><br /><br />
+            <button onclick="abrirEditar()">Editar</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center">
+            <img src="./tenis.webp" width="120" /><br /><br />
+            <button onclick="confirmarDelete()">Deletar</button><br /><br />
+            <button onclick="abrirEditar()">Editar</button>
+          </td>
+
+          <td align="center">
+            <img src="./tenis.webp" width="120" /><br /><br />
+            <button onclick="confirmarDelete()">Deletar</button><br /><br />
+            <button onclick="abrirEditar()">Editar</button>
+          </td>
+
+          <td align="center">
+            <img src="./tenis.webp" width="120" /><br /><br />
+            <button onclick="confirmarDelete()">Deletar</button><br /><br />
+            <button onclick="abrirEditar()">Editar</button>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <dialog id="modalAdicionar">
+      <h3>Adicionar Produto</h3>
+
+      <form>
+        Nome:<br />
+        <input type="text" /><br /><br />
+
+        Quantidade:<br />
+        <input type="number" /><br /><br />
+        <p>
+          <b>Tamanhos disponíveis:</b><br />
+
+          <input type="checkbox" name="tamanho[]" value="34" /> 34
+          <input type="checkbox" name="tamanho[]" value="35" /> 35
+          <input type="checkbox" name="tamanho[]" value="36" /> 36
+          <input type="checkbox" name="tamanho[]" value="37" /> 37
+          <input type="checkbox" name="tamanho[]" value="38" /> 38
+          <input type="checkbox" name="tamanho[]" value="39" /> 39
+          <input type="checkbox" name="tamanho[]" value="40" /> 40
+          <input type="checkbox" name="tamanho[]" value="41" /> 41
+          <input type="checkbox" name="tamanho[]" value="42" /> 42
+          <input type="checkbox" name="tamanho[]" value="43" /> 43
+        </p>
+
+        Preço:<br />
+        <input type="text" /><br /><br />
+
+        Imagem:<br />
+        <input type="file" /><br /><br />
+
+        Descrição:<br />
+        <textarea rows="4" cols="30"></textarea><br /><br />
+
+        <button type="submit">Salvar</button>
+        <button type="button" onclick="fecharAdicionar()">Cancelar</button>
+      </form>
+    </dialog>
+
+    <dialog id="modalEditar">
+      <h3>Editar Produto</h3>
+
+      <form>
+        Nome:<br />
+        <input type="text" /><br /><br />
+
+        Quantidade:<br />
+        <input type="number" /><br /><br />
+        <p>
+          <b>Editar tamanhos:</b><br />
+
+          <input type="checkbox" name="tamanho[]" value="34" /> 34
+          <input type="checkbox" name="tamanho[]" value="35" /> 35
+          <input type="checkbox" name="tamanho[]" value="36" /> 36
+          <input type="checkbox" name="tamanho[]" value="37" /> 37
+          <input type="checkbox" name="tamanho[]" value="38" /> 38
+          <input type="checkbox" name="tamanho[]" value="39" /> 39
+          <input type="checkbox" name="tamanho[]" value="40" /> 40
+          <input type="checkbox" name="tamanho[]" value="41" /> 41
+          <input type="checkbox" name="tamanho[]" value="42" /> 42
+          <input type="checkbox" name="tamanho[]" value="43" /> 43
+        </p>
+        Preço:<br />
+        <input type="text" /><br /><br />
+
+        Imagem:<br />
+        <input type="file" /><br /><br />
+
+        Descrição:<br />
+        <textarea rows="4" cols="30"></textarea><br /><br />
+
+        <button type="submit">Salvar Alterações</button>
+        <button type="button" onclick="fecharEditar()">Cancelar</button>
+      </form>
+    </dialog>
+
+    <footer>
+    <hr>
+
+    <table width="60%" align="center" cellpadding="3" cellspacing="0">
+        <tr>
+            <td align="center">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </td>
+
+            <td align="center">
+                <h4>Categorias</h4>
+                <ul>
+                    <li>Tênis</li>
+                    <li>Esportivo</li>
+                    <li>Casual</li>
+                </ul>
+            </td>
+
+            <td align="center">
+                <h4>Redes</h4>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>WhatsApp</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3" align="center">
+                <p>© 2026 Klyne</p>
+            </td>
+        </tr>
+    </table>
+
+</footer>
+
+    <script>
+      function confirmarDelete() {
+        if (confirm("Tem certeza que deseja deletar este produto?")) {
+          alert("Produto deletado!");
+        }
+      }
+
+      function abrirAdicionar() {
+        document.getElementById("modalAdicionar").showModal();
+      }
+
+      function fecharAdicionar() {
+        document.getElementById("modalAdicionar").close();
+      }
+
+      function abrirEditar() {
+        document.getElementById("modalEditar").showModal();
+      }
+
+      function fecharEditar() {
+        document.getElementById("modalEditar").close();
+      }
+    </script>
+  </body>
+</html>

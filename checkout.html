@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <table width="100%" border="0" cellspacing="10">
+            <tr>
+                <td align="left">
+                    <h1>Klyne</h1>
+                </td>
 
+                <td align="center">
+                    <form>
+                        <input type="text" placeholder="Pesquisar...">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </td>
+
+                <td align="right">
+                    <a href="./index.html">Home</a> |
+                    <a href="./cart.html">Carrinho</a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </header>
+<body>
+    <p>Nome Completo</p>
+    <input type="text" placeholder="Nome Completo">
+    <p>Email</p>
+    <input type="email" placeholder="Email">
+
+    <h1>Pagamento</h1>
+    <p>Numero Do Cartão</p>
+    <input type="text" placeholder="Numero Do Cartão">
+    <p>Data De Validade</p>
+    <input type="text" placeholder="Data De Validade">
+    <p>CVV</p>
+    <input type="text" placeholder="CVV">
+
+    <p><button>Finalizar Compra</button></p>
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            alert("Compra Finalizada com Sucesso!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Histórico de Compras - Klyne</title>
+  </head>
+  <body>
+    <header>
+      <table width="100%">
+        <tr>
+          <td>
+            <h1>Klyne</h1>
+          </td>
+
+          <td align="center">
+            <input type="text" placeholder="Pesquisar..." />
+            <input type="submit" value="Buscar" />
+          </td>
+
+          <td align="right">
+            <a href="index.html">Home</a> |
+            <a href="admin.html">Admin</a>
+          </td>
+        </tr>
+      </table>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Histórico de Compras</h2>
+
+      <table border="1" width="100%" cellpadding="10">
+        <tr>
+          <th>ID Pedido</th>
+          <th>Cliente</th>
+          <th>Data</th>
+          <th>Total</th>
+          <th>Forma de Pagamento</th>
+          <th>Ações</th>
+        </tr>
+
+        <tr>
+          <td>001</td>
+          <td>Maria</td>
+          <td>09/04/2026</td>
+          <td>R$ 300,00</td>
+          <td>Cartão de Crédito</td>
+          <td>
+            <button onclick="abrirDetalhes()">Ver Detalhes</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>002</td>
+          <td>Ana</td>
+          <td>08/04/2026</td>
+          <td>R$ 150,00</td>
+          <td>Pix</td>
+          <td>
+            <button onclick="abrirDetalhes()">Ver Detalhes</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>003</td>
+          <td>Carlos</td>
+          <td>07/04/2026</td>
+          <td>R$ 500,00</td>
+          <td>Boleto</td>
+          <td>
+            <button onclick="abrirDetalhes()">Ver Detalhes</button>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <dialog id="modalDetalhes">
+      <h3>Detalhes da Compra</h3>
+
+      <p><b>Cliente:</b> Maria</p>
+      <p><b>Data:</b> 09/04/2026</p>
+      <p><b>Forma de pagamento:</b> Cartão de Crédito</p>
+
+      <h4>Produtos:</h4>
+
+      <ul>
+        <li>
+          <a href="index.html#produto1">
+            <img src="img1.jpg" width="120" /><br />
+            Tênis Esportivo - R$ 200
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#produto2">
+            <img src="img2.jpg" width="120" /><br />
+            Tênis Casual - R$ 100
+          </a>
+        </li>
+      </ul>
+
+      <p><b>Total:</b> R$ 300,00</p>
+
+      <button onclick="fecharDetalhes()">Fechar</button>
+    </dialog>
+
+    <footer>
+    <hr>
+
+    <table width="60%" align="center" cellpadding="3" cellspacing="0">
+        <tr>
+            <td align="center">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </td>
+
+            <td align="center">
+                <h4>Categorias</h4>
+                <ul>
+                    <li>Tênis</li>
+                    <li>Esportivo</li>
+                    <li>Casual</li>
+                </ul>
+            </td>
+
+            <td align="center">
+                <h4>Redes</h4>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>WhatsApp</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3" align="center">
+                <p>© 2026 Klyne</p>
+            </td>
+        </tr>
+    </table>
+
+</footer>
+
+    <script>
+      function abrirDetalhes() {
+        document.getElementById("modalDetalhes").showModal();
+      }
+
+      function fecharDetalhes() {
+        document.getElementById("modalDetalhes").close();
+      }
+    </script>
+  </body>
+</html>
